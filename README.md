@@ -7,6 +7,8 @@ A hands-on, DevOps-level AWS course that runs entirely on your machine against
 emulator of its APIs. There's no AWS account and no bill, and the course
 terminal can't touch real AWS.
 
+![A lab in progress: the lesson and its auto-graded tasks on the left, a real terminal wired to the emulator on the right](docs/screenshots/lab.png)
+
 You get a browser UI with:
 
 - **15 modules**, from how AWS works through IAM, VPC, compute, storage,
@@ -21,6 +23,28 @@ You get a browser UI with:
 - **Auto-graded labs**: *Check my work* inspects the emulator's actual state
   and tells you exactly what's still wrong. Hints and reference solutions included.
 - **Quizzes** with scenario questions and explanations. Progress is saved in `.state/`.
+
+## A quick tour
+
+**Readings** explain how things work and why, with diagrams, comparison tables
+and runnable snippets.
+
+![A reading on VPC routing, with a three-tier, two-AZ network diagram](docs/screenshots/reading.png)
+
+**Resources** is the console the emulator doesn't have. Here the VPC you just
+built is drawn as a topology map: subnets per AZ, public or private (worked out
+from the route tables), instances and security-group rules.
+
+![The Resources tab drawing the lab VPC as a topology map](docs/screenshots/resources.png)
+
+**API** shows every signed request your commands make. Failed calls are
+highlighted with their AWS error code (here, a subnet CIDR conflict).
+
+![The API inspector showing a RunInstances request with its SigV4 headers and body](docs/screenshots/inspector.png)
+
+**Home** groups the 15 modules into phases and remembers where you left off.
+
+![The course home page with progress through the first modules](docs/screenshots/home.png)
 
 ## Quick start
 
