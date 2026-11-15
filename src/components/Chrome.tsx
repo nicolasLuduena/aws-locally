@@ -50,9 +50,7 @@ export function Header({ course, onToggleNav }: { course: Course; onToggleNav: (
         ☰
       </button>
       <a className="brand" href="#/">
-        <span className="brand-mark" aria-hidden>
-          ▲
-        </span>
+        <img className="brand-mark" src="/favicon.svg" width={22} height={22} alt="" />
         <span>
           aws<span className="brand-dim">-locally</span>
         </span>
